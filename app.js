@@ -28,14 +28,7 @@ app.use(userRouter)
 app.use(itemRouter)
 app.use(cartRouter)
 app.use(orderRouter)
-app.get("/", cors(), async (req, res) => {
-  res.send("This is working")
-  })
-  
-  app.post("/post_name", async (req, res) => {
-    let {name} = req.body
-    console.log(name)
-    })
+
 
 app.listen(port, () => {
     console.log('server listening on port ' + port)
